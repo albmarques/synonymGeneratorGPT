@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="col bg-white">
+        <main class="px-4 py-3">
+            <form  action="/req" method="POST">
+                <div class="mb-3">
+                    <h5 class="modal-title">Gerador de sinônimos</h5>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDropdownFormName1" class="form-label">Palavra</label>
+                    <input type="text" name="word" class="form-control" id="exampleDropdownFormName1">
+                </div>
+                <button type="submit" class="btn btn-primary">Gerar sinônimos</button>
+            </form>
+            <div class="mb-3">
+                <h5 class="modal-title">Sinônimos</h5>
+            </div>
+            <div class="mb-3">
+              {{#each words}}
+                <div class="row">{{this}} </div>
+              {{/each}}
+            </div>
+        </main>
+    </div>
+</div>
