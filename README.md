@@ -1,5 +1,7 @@
 # synonymGeneratorGPT
 
+Gerador de sinônimos com uso GPT
+
 Comandos necessários para execução <br />
 npm install express -- save <br />
 npm install express-handlebars --save <br />
